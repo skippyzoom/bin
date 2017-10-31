@@ -9,7 +9,7 @@ BACKUP=~/projects
 ## Make new project and run subdirectories if they do not exist
 ## This calls ~/set_target, which creates the target from the
 ## UNIX pwd command.
-mkdir $BACKUP/$(set_target.sh)
+mkdir -p $BACKUP/$(set_target.sh)
 
 ## Collect the parameters in a tar ball.
 tar_eppic_params.sh
